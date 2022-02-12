@@ -6,10 +6,41 @@
         <link rel = "stylesheet" type = "text/css" href="estilo.css"/>
     </head>
     <body>
-        <A1>FAST LEARN SCHOOL</A1>
+        <a1>FAST LEARN SCHOOL</a1>
         <form>
-            <A2>APPLICATION FORM</A2>
-            
+            <a2>APPLICATION FORM</a2>
+            <fieldset>
+                <legend>Personal Data</legend>
+                Name: <input type = "text" name = "name" required placeholder="Only first name" autofocus pattern = "[A-Z]{1} [a-z]{2,15}">
+                <br><br>
+                Last name: <input type ="text" name="name" required placeholder="Only last name" autofocus pattern="[A-Z] {1} [a-z] {2,15}">
+                <br><br>
+                Birth date: <input type="date" name="BirthDate" required>
+                <br><br>
+                Age: <input type="number" name="age" min="10" max="70">
+                <br><br>
+                Sex:
+                <br> 
+                     <input type="radio" name="sex" value="feminine" required> Feminine
+                     <input type="radio" name="sex" value="masculine" required> Masculine
+                     <input type="radio" name="sex" value="other" required> Others
+                     <input type="radio" name="sex" value="nosex" required> I prefer not to inform
+                <br><br>
+                Email: <input type="email" name="mail" required placeholder="Only number and letters" pattern="[a-z]{2,15}">
+                <br><br>
+                Password: <input type="password" name="password1" required placeholder="Only number and letters">
+                Confirm password: <input type="password" name="password2" required>
+                <br><br>
+                <label for="obs">Observation</label><textarea name="obs" id="obs" cols="60" rows="5"></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Level of Knowledge in the English language</legend>
+                Reading Level
+                <select name="reading">
+                    <option value="_" selected>Chose...</option>
+                    <option>Basic</option>
+                </select>
+            </fieldset>
         </form>
     </body>
 </html>
