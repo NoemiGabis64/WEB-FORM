@@ -7,7 +7,7 @@
     </head>
     <body>
         <a1>FAST LEARN SCHOOL</a1>
-        <form>
+        <form method="GET">
             <a2>APPLICATION FORM</a2>
             <fieldset>
                 <legend>Personal Data</legend>
@@ -34,13 +34,47 @@
                 <label for="obs">Observation</label><textarea name="obs" id="obs" cols="60" rows="5"></textarea>
             </fieldset>
             <fieldset>
-                <legend>Level of Knowledge in the English language</legend>
+                <legend>Level of Knowledge in the Japanese language</legend>
                 Reading Level
                 <select name="reading">
                     <option value="_" selected>Chose...</option>
-                    <option>Basic</option>
+                    <option value="basic">Basic</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value ="advanced">Advanced</option>
+                </select>
+                <br><br>
+                Writing Level
+                <select name="writing">
+                    <option value="_" selected>Chose...</option>
+                    <option value="basic">Basic</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value ="advanced">Advanced</option>
+                </select>
+                Speak Level
+                <select name="speak">
+                    <option value="_" selected>Chose...</option>
+                    <option value="basic">Basic</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value ="advanced">Advanced</option>
+                </select>
+                Hearing Level 
+                <select name="hearing">
+                    <option value="_" selected>Chose...</option>
+                    <option value="basic">Basic</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value ="advanced">Advanced</option>
                 </select>
             </fieldset>
+            <fieldset>
+                <legend>Select your unit</legend>
+                <input type ="checkbox" name="unit1" value="center">Center
+                <input type="checkbox" name="unit2" value="inner-city">Inner City
+                <input type="checkbox" name="unit3" value="out of town">Out of town
+            </fieldset>
+            <div>
+                <input type="submit" name="button1" value="Confirm">
+                <input type="reset" name="button2" value="Clear">
+            </div>
         </form>
     </body>
 </html>
